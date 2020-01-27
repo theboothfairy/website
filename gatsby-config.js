@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `The Booth Fairy`,
     description: `Photobooth hire for brands, agencies and event planners`,
-    author: `@gatsbyjs`,
+    author: `The Booth Fairy`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
+      pathPrefix: "/website",
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
