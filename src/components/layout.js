@@ -35,7 +35,14 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, The Booth Fairy
+          © {new Date().getFullYear()}, The Booth Fairy<br />
+          <span
+            style={{
+              fontSize: 12,
+            }}
+          >
+            <a href="https://beta.companieshouse.gov.uk/company/12473482">Piqture Limited Company</a>
+          </span>
         </footer>
       </div>
     </>
