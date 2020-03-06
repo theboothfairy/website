@@ -7,9 +7,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="The Booth Fairy" description="Photobooth Hire" />
 
-    <h1>Photobooth hire <br /> for brands, agencies and event planners.</h1>
-
-    <br />
+    <h1 className="text-4xl">Photobooth hire for brands, agencies and event planners.</h1>
 
     <h2>Want to find out more?</h2>
 
