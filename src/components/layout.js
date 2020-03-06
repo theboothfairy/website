@@ -8,10 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
-import "./layout.css"
-import "./images.css"
+import "./styles.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,21 +25,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div className="container mx-auto text-center">
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, The Booth Fairy<br />
-          <span
-            style={{
-              fontSize: 12,
-            }}
-          >
+          <span>
             <a href="https://beta.companieshouse.gov.uk/company/12473482">Piqture Limited Company</a>
           </span>
         </footer>
