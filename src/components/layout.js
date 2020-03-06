@@ -25,9 +25,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="container mx-auto text-center">
-        <main>{children}</main>
-        <footer>
+      <div className="container mx-auto text-center font-quicksand">
+        <main className="mb-12">{children}</main>
+        <footer className="text-xs">
           © {new Date().getFullYear()}, The Booth Fairy<br />
           <span>
             <a href="https://beta.companieshouse.gov.uk/company/12473482">Piqture Limited Company</a>

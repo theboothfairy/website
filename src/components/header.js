@@ -5,7 +5,7 @@ import LogoSVG from "../images/theboothfairy-logo.svg"
 const Header = ({ siteTitle }) => (
   <header>
     <div className="flex items-center justify-center">
-      <LogoSVG className="m-10" />
+      <LogoSVG className="m-12" />
     </div>
   </header>
 )

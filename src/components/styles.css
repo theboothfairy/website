@@ -1,3 +1,26 @@
 @tailwind base;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Quicksand:300,400,500,600,700&display=swap&subset=latin-ext');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    @apply font-bold text-gray-800 text-4xl mb-10;
+}
+
+h2 {
+    @apply text-gray-700 text-2xl mb-5;
+}
+
+a {
+    @apply text-blue-600 underline;
+  }
+
 @tailwind components;
 @tailwind utilities;
